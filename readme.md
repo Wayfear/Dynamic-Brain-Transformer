@@ -23,6 +23,9 @@ python -m source --multirun datasz=100p model=gfine dataset=ABCD_reg repeat_time
 
 - **preprocess**, default=(mixup, non_mixup). Which preprocess to applied. The value is a list of preprocess names. For example, mixup means mixup, non_mixup means the dataset is feeded into models without preprocess.
 
+- **model.window_sz**, default=360. The window size of the sliding window.
+
+- **model.stride**, default=360. The stride of the sliding window.
 
 ## Installation
 
