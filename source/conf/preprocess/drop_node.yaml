@@ -1,0 +1,8 @@
+name: drop_node
+continus: False
+discrete: False
+graphon: False
+renn_mixup: False
+c_mixup: False
+drop_node: True
+drop_edge: False

@@ -1,0 +1,12 @@
+name: tcga
+batch_size: 16
+test_batch_size: 16
+val_batch_size: 16
+train_set: 0.7
+val_set: 0.1
+node_feature: /home/xkan/dataset/TCGA.npy
+drop_last: False
+stratified: True
+regression: False
+column: cancer_type
+num_classes: 5

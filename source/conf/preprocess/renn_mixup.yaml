@@ -1,0 +1,9 @@
+name: renn_mixup
+alpha: 0.5
+continus: False
+discrete: False
+graphon: False
+renn_mixup: True
+c_mixup: False
+drop_node: False
+drop_edge: False

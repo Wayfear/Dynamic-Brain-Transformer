@@ -1,0 +1,8 @@
+name: graphon_mixup
+continus: False
+discrete: False
+graphon: True
+renn_mixup: False
+c_mixup: False
+drop_node: False
+drop_edge: False

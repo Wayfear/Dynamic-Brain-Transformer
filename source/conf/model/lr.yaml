@@ -1,0 +1,7 @@
+name: LogisticRegression
+train: ShallowTraining
+grid:
+  C: np.logspace(-3, 3, 7)
+  penalty: 
+    - l1
+    - l2

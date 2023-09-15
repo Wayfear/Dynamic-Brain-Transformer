@@ -1,0 +1,40 @@
+name: GlobalFineGrinedNN
+
+# EGT setting
+num_heads: 2
+attn_dropout: 0.
+attn_maskout: 0.
+clip_logits_value: 
+  - -5
+  - 5
+scale_dot: True
+
+# sliding window setting
+window_sz: 360
+stride: 360
+
+# BNT
+
+# ABCD
+sizes: [360, 100]  # Note: The input node size should not be included here
+pos_embed_dim: 360
+
+# PNC
+# sizes: [264, 100]
+# pos_embed_dim: 264
+pooling: [false, true]
+pos_encoding: none  # identity, none
+orthogonal: true
+freeze_center: true
+project_assignment: true
+use_fc: false
+
+# control   1: substitue V with global, use result only    2: substitue global as V and concat global  3:
+control: 2
+use_ln: true
+use_bn: true
+use_node: false
+mask_0: true
+fc_dropout: false
+
+save_graph: true

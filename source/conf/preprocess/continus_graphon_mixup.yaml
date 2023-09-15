@@ -1,0 +1,5 @@
+name: continus_graphon_mixup
+continus: True
+discrete: False
+graphon: True
+renn_mixup: False

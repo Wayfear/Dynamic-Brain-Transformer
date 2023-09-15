@@ -1,0 +1,7 @@
+name: de_con_mixup
+continus: True
+discrete: True
+renn_mixup: False
+c_mixup: False
+drop_node: False
+drop_edge: False
