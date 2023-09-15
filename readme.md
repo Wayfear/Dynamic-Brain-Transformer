@@ -10,14 +10,14 @@ Dynamic Brain Transformer is the open-source implementation of the BHI 2023 pape
 2. Run the following command to train the model.
 
 ```bash
-python -m source --multirun datasz=100p model=gfine dataset=PNC repeat_time=5 preprocess=mixup
+python -m source --multirun datasz=100p model=gfine dataset=ABCD_reg repeat_time=5 preprocess=non_mixup model.window_sz=360 model.stride=360
 ```
 
 - **datasz**, default=(10p, 20p, 30p, 40p, 50p, 60p, 70p, 80p, 90p, 100p). How much data to use for training. The value is a percentage of the total number of samples in the dataset. For example, 10p means 10% of the total number of samples in the training set.
 
 - **model**, default=(gfine,). Which model to use. The value is a list of model names. For example, gfine means Dynamic Brain Transformer.
 
-- **dataset**, default=(PNC,). Which dataset to use. The value is a list of dataset names.
+- **dataset**, default=(PNC, ABCD_reg). Which dataset to use. The value is a list of dataset names.
 
 - **repeat_time**, default=5. How many times to repeat the experiment. The value is an integer. For example, 5 means repeat 5 times.
 
