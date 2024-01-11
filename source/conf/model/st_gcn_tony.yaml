@@ -1,4 +1,0 @@
-name: st_gcn_tony
-
-edge_importance_weighting: True
-save_graph: False

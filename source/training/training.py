@@ -15,9 +15,6 @@ import logging
 import pandas as pd
 import matplotlib.pyplot as plt
 from random import randrange
-from einops import repeat
-
-import torch.utils.bottleneck as bottleneck
 
 
 class Train:
